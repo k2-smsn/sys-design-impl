@@ -17,7 +17,7 @@ const LEVELS = [
         <div>
           <h4>Why this exists</h4>
           <p>I mostly build small self projects, and system design concepts like load balancers, replicas and sharding only really matter on big enterprise systems. I can't practice them on a real project, so I made this to apply them in the one way I can.</p>
-          <p>It follows a single mini Blog site where users create, read, update and delete posts. Each level pretends the app got more popular, shows the problem that creates, and adds the concept that fixes it. It's a reviewer for quick revision, not a full course.</p>
+          <p>It follows a single mini hypothetical Blog site where users create, read, update and delete posts. Each level pretends the app got more popular, shows the problem that creates, and adds the concept that fixes it. It's a reviewer for quick revision, not a full course.</p>
         </div>
         <div>
           <h4>How to use it</h4>
