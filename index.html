@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scaling a Mini Twitter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <h1>Scaling a mini Twitter</h1>
+  <div class="lv" id="lv"></div>
+</nav>
+
+<main>
+  <section class="box" id="story"></section>
+  <section class="box" id="topobox">
+    <button class="rew" id="reset" title="Reset level" aria-label="Reset level">Reset</button>
+    <h4>Topology <span class="mute">(hover a { } box for its algorithm, click a box to kill or restore it)</span></h4>
+    <div class="topo" id="topo"></div>
+    <div class="bot"><div class="ctl">
+      <div class="row"><div><label for="user">Author</label><select id="user"></select></div><div><label for="txt">Post text</label><input id="txt" value="hello world"></div><div><label for="pid">Post id</label><input id="pid" type="number" value="1" min="1"></div></div>
+      <div class="row"><button class="op" data-o="create">Create post</button><button class="op" data-o="read">Read post</button><button class="op" data-o="update">Update post</button><button class="op" data-o="delete">Delete post</button></div>
+    </div>
+    <div class="out"><h4>Output</h4><div class="cap">Request path</div><div id="log" aria-live="polite"><span class="mute">Press a button to send a request.</span></div><div class="cap">Response</div><div id="res"></div></div></div>
+  </section>
+</main>
+
+</div>
+<script src="js/helpers.js"></script>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
