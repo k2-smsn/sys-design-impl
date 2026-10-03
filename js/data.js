@@ -17,7 +17,7 @@ const LEVELS = [
         <div>
           <h4>Why this exists</h4>
           <p>I mostly build small self projects, and system design concepts like load balancers, replicas and sharding only really matter on big enterprise systems. I can't practice them on a real project, so I made this to apply them in the one way I can.</p>
-          <p>It follows a single mini Twitter clone where users create, read, update and delete posts. Each level pretends the app got more popular, shows the problem that creates, and adds the concept that fixes it. It's a reviewer for quick revision, not a full course.</p>
+          <p>It follows a single mini Blog site where users create, read, update and delete posts. Each level pretends the app got more popular, shows the problem that creates, and adds the concept that fixes it. It's a reviewer for quick revision, not a full course.</p>
         </div>
         <div>
           <h4>How to use it</h4>
@@ -43,7 +43,7 @@ const LEVELS = [
     concept: "Horizontal scaling, health checks",
     features: ["loadBalancer"],
     problem:
-      "A viral tweet pushes one server to its CPU limit. Run 3 identical stateless app servers behind a load balancer that spreads requests and skips dead servers.",
+      "A viral blog post pushes one server to its CPU limit. Run 3 identical stateless app servers behind a load balancer that spreads requests and skips dead servers.",
     tryThis:
       "Press Read six times and watch the round-robin index move. Take down app-2: the health check skips it. Then take down the load balancer to see that you only moved the single point of failure.",
   },
